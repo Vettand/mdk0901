@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Личный кабинет</h1>
+        <div class="info">
+            <p>Почта - <%= user.email %></p>
+            <p>Имя и Фамилия - <%= user.last_name %> <%= user.first_name %></p>
+            <p>Номер телефона - <%= user.phone %></p>
+        </div>
+        <div class="btn">
+            <button onclick="window.location.href = ''">Изменить</button>
+            <button onclick="window.location.href = '/logout'">Выйти</button>
+        </div>
+</body>
+</html>
